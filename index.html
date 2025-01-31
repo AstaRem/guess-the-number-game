@@ -4,10 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guess the number</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    
+    <!-- styles -->
     <link href="./styles.css" rel="stylesheet">
+    <!-- action -->
     <script src="./app.js" defer></script>
 </head>
 <body>
-    
+
+    <div class="wrapper">
+        <section class="section">
+            <div class="section-content">
+                
+                <h1>Can you guess the number?</h1>
+
+
+                <div class="card card-1">
+                    <div class="card__text">
+                        <div>Guess your number, <span id="guess_range">from 1 to 20</span> </div>
+                        <div>You have <span id="guess-qty">5</span> guesses</div>
+                    </div>
+
+                    <div class="card__input">
+                    <form>
+                        <input type="text" id="user-input" name="user-input" required>
+                        <br>
+                        <label for="user-input"></label>
+                            <button type="submit" value="Submit" id="submit-form">Submit</button>
+                    </form>
+                    </div>
+                </div>
+
+                <div class="card result">
+                    <div class="your-num">Your chosen number is <span id="result__num">20</span></div>
+                    <div id="result__text">Your guess is correct!</div>
+                </div>
+
+                <div class="card start-again">
+                    <button id="start-again">Start again</button>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+
 </body>
 </html>
